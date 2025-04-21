@@ -7,7 +7,7 @@ export default defineConfig({
   build: {
     lib: {
       entry: path.resolve(__dirname, 'src/Input.tsx'),
-      name: 'MyComponent',
+      name: 'Input',
       fileName: (format) => `input.${format}.js`,
     },
     rollupOptions: {
