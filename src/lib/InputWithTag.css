@@ -70,7 +70,7 @@
 
 /* Error text */
 .error-text {
-  color: #ef4444;
+  color: #ef4444; /* red-500 */
   font-size: 13px;
   margin-top: 2px;
 }
