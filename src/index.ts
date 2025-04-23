@@ -1,0 +1,1 @@
+export { default as InputWithTags } from './lib/InputWithTags';

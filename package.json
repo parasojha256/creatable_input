@@ -1,23 +1,18 @@
 {
-  "name": "createable_input",
+  "name": "input-with-tags",
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "main": "./dist/input.umd.js",
-  "module": "./dist/input.es.js",
-  "types": "./dist/src/Input.d.ts",
+  "main": "./dist/input-with-tags.umd.js",
+  "module": "./dist/input-with-tags.es.js",
+  "types": "./dist/index.d.ts",
   "files": [
-    "dist"
+    "dist",
+    "src/lib/TagsInput.css"
   ],
-  "exports": {
-    ".": {
-      "import": "./dist/input.es.js",
-      "require": "./dist/input.umd.js"
-    }
-  },
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build",
+    "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview"
   },

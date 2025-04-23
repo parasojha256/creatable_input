@@ -1,0 +1,76 @@
+/* Wrapper styles */
+.tags-input-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-family: sans-serif;
+}
+
+/* Label styling */
+.tags-input-wrapper label {
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+/* Container for tags + input */
+.tags-input-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  min-height: 42px;
+  transition: border-color 0.2s;
+  background-color: white;
+}
+
+.tags-input-container:focus-within {
+  border-color: #3b82f6; /* blue-500 */
+}
+
+/* Error state */
+.tags-input-container.has-error {
+  border-color: #ef4444; /* red-500 */
+}
+
+/* Tag styling */
+.tag {
+  background-color: #f3f4f6; /* gray-100 */
+  color: #111827; /* gray-900 */
+  padding: 6px 10px;
+  border-radius: 9999px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+}
+
+.tag span {
+  margin-left: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+  color: #6b7280; /* gray-500 */
+}
+
+.tag span:hover {
+  color: #ef4444; /* red-500 */
+}
+
+/* Input field inside tag container */
+.tags-input-container input {
+  flex: 1;
+  min-width: 120px;
+  padding: 6px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+}
+
+/* Error text */
+.error-text {
+  color: #ef4444;
+  font-size: 13px;
+  margin-top: 2px;
+}

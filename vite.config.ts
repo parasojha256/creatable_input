@@ -6,9 +6,9 @@ export default defineConfig({
   plugins: [react()],
   build: {
     lib: {
-      entry: path.resolve(__dirname, 'src/Input.tsx'),
-      name: 'Input',
-      fileName: (format) => `input.${format}.js`,
+      entry: path.resolve(__dirname, 'src/index.ts'),
+      name: 'InputWithTags',
+      fileName: (format) => `input-with-tags.${format}.js`,
     },
     rollupOptions: {
       external: ['react', 'react-dom'],
